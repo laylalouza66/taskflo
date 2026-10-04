@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aura Voyage — a luxury travel and tourism agency crafting bespoke journeys for the discerning traveller." />
+  <title>Aura Voyage — Bespoke Luxury Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" data-modal-trigger>
+        <span class="nav__logo-mark">AV</span>
+        <span class="nav__logo-text">Aura Voyage</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#destinations" class="nav__link">Destinations</a>
+        <a href="#experiences" class="nav__link">Experiences</a>
+        <a href="#concierge" class="nav__link">Concierge</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="nav__cta nav__cta--mobile cta-trigger">Enquire</a>
+      </nav>
+
+      <a href="#contact" class="nav__cta cta-trigger">Plan Your Journey</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" style="background-image: url('https://images.pexels.com/photos/1287452/pexels-photo-1287452.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Bespoke Luxury Travel</p>
+      <h1 class="hero__title">
+        The world,<br/>
+        <em>distilled</em> into journeys.
+      </h1>
+      <p class="hero__subtitle">
+        Private islands, heritage estates, and untouched coastlines —
+        curated by a team that has walked every path before you.
+      </p>
+      <div class="hero__actions">
+        <a href="#destinations" class="btn btn--primary cta-trigger">Explore Destinations</a>
+        <a href="#concierge" class="btn btn--ghost cta-trigger">Speak to a Concierge</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ====== INTRO STRIP ====== -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro__grid">
+        <div class="intro__item">
+          <span class="intro__num">01</span>
+          <h3>Private Itineraries</h3>
+          <p>Every journey is designed from a blank page around your tastes, pace, and travelling companions.</p>
+        </div>
+        <div class="intro__item">
+          <span class="intro__num">02</span>
+          <h3>Insider Access</h3>
+          <p>Doors that remain closed to the public open quietly for our guests — from royal residences to chef's tables.</p>
+        </div>
+        <div class="intro__item">
+          <span class="intro__num">03</span>
+          <h3>Seamless Care</h3>
+          <p>A dedicated concierge accompanies you from the first idea to the final farewell, on the ground and in the air.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DESTINATIONS ====== -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-head__eyebrow">Selected Destinations</p>
+        <h2 class="section-head__title">Places worth crossing the world for</h2>
+      </div>
+
+      <div class="dest-grid">
+        <article class="dest-card dest-card--lg" data-modal-trigger>
+          <img src="https://images.pexels.com/photos/13650553/pexels-photo-13650553.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Santorini sunset over the caldera" loading="lazy" />
+          <div class="dest-card__body">
+            <span class="dest-card__region">Greece</span>
+            <h3 class="dest-card__name">Santorini</h3>
+            <p class="dest-card__desc">Caldera-edge suites, private wine tastings at dusk, and the Aegean stretched endlessly below.</p>
+            <span class="dest-card__cta">Discover →</span>
+          </div>
+        </article>
+
+        <article class="dest-card" data-modal-trigger>
+          <img src="https://images.pexels.com/photos/1287452/pexels-photo-1287452.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Maldives overwater villas" loading="lazy" />
+          <div class="dest-card__body">
+            <span class="dest-card__region">Maldives</span>
+            <h3 class="dest-card__name">Private Atolls</h3>
+            <p class="dest-card__desc">Overwater villas on reefs that belong to you alone.</p>
+            <span class="dest-card__cta">Discover →</span>
+          </div>
+        </article>
+
+        <article class="dest-card" data-modal-trigger>
+          <img src="https://images.pexels.com/photos/20058034/pexels-photo-20058034.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Swiss Alps chalet in winter" loading="lazy" />
+          <div class="dest-card__body">
+            <span class="dest-card__region">Switzerland</span>
+            <h3 class="dest-card__name">The Alps</h3>
+            <p class="dest-card__desc">Chalet retreats above the clouds, with heli-skiing at first light.</p>
+            <span class="dest-card__cta">Discover →</span>
+          </div>
+        </article>
+
+        <article class="dest-card" data-modal-trigger>
+          <img src="https://images.pexels.com/photos/96418/pexels-photo-96418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Traditional Japanese ryokan interior" loading="lazy" />
+          <div class="dest-card__body">
+            <span class="dest-card__region">Japan</span>
+            <h3 class="dest-card__name">Kyoto Ryokans</h3>
+            <p class="dest-card__desc">Tatami rooms, kaiseki dinners, and temples before dawn.</p>
+            <span class="dest-card__cta">Discover →</span>
+          </div>
+        </article>
+
+        <article class="dest-card dest-card--wide" data-modal-trigger>
+          <img src="https://images.pexels.com/photos/3327981/pexels-photo-3327981.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Luxury yacht on the Aegean Sea" loading="lazy" />
+          <div class="dest-card__body">
+            <span class="dest-card__region">Mediterranean</span>
+            <h3 class="dest-card__name">Private Yachting</h3>
+            <p class="dest-card__desc">Crewed yachts through the Cyclades, the Amalfi Coast, and the Côte d'Azur — charted to your rhythm.</p>
+            <span class="dest-card__cta">Discover →</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCES ====== -->
+  <section class="experiences" id="experiences">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="section-head__eyebrow">Signature Experiences</p>
+        <h2 class="section-head__title">Beyond the destination</h2>
+        <p class="section-head__lead">The moments that turn a trip into a story retold for years.</p>
+      </div>
+
+      <div class="exp-grid">
+        <div class="exp-item" data-modal-trigger>
+          <div class="exp-item__img" style="background-image:url('https://images.pexels.com/photos/20562278/pexels-photo-20562278.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+          <div class="exp-item__text">
+            <h3>Private Jet Charter</h3>
+            <p>Globe-spanning travel on your schedule, with interiors designed for rest and arrival.</p>
+          </div>
+        </div>
+
+        <div class="exp-item" data-modal-trigger>
+          <div class="exp-item__img" style="background-image:url('https://images.pexels.com/photos/6875499/pexels-photo-6875499.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+          <div class="exp-item__text">
+            <h3>Island Buyout</h3>
+            <p>Exclusive use of a private island — staff, chefs, and beaches devoted to your party alone.</p>
+          </div>
+        </div>
+
+        <div class="exp-item" data-modal-trigger>
+          <div class="exp-item__img" style="background-image:url('https://images.pexels.com/photos/5745827/pexels-photo-5745827.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+          <div class="exp-item__text">
+            <h3>Cultural Immersion</h3>
+            <p>After-hours access to temples, museums, and artisan workshops, guided by local masters.</p>
+          </div>
+        </div>
+
+        <div class="exp-item" data-modal-trigger>
+          <div class="exp-item__img" style="background-image:url('https://images.pexels.com/photos/29573275/pexels-photo-29573275.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+          <div class="exp-item__text">
+            <h3>Alpine Retreats</h3>
+            <p>Chalets with private guides, wellness spas, and kitchens led by Michelin-trained chefs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONCIERGE ====== -->
+  <section class="concierge" id="concierge">
+    <div class="concierge__bg" style="background-image:url('https://images.pexels.com/photos/417351/pexels-photo-417351.jpeg?auto=compress&cs=tinysrgb&w=1920');"></div>
+    <div class="concierge__overlay"></div>
+
+    <div class="concierge__content">
+      <p class="section-head__eyebrow">Personal Concierge</p>
+      <h2 class="concierge__title">One point of contact.<br/>Every detail handled.</h2>
+      <p class="concierge__lead">
+        From the first conversation to the moment you return home, a single dedicated
+        concierge oversees your journey — adjusting plans in real time, anticipating needs
+        before you voice them, and ensuring nothing is left to chance.
+      </p>
+      <a href="#contact" class="btn btn--light cta-trigger">Begin a Conversation</a>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="section-head__eyebrow">Our Philosophy</p>
+        <h2 class="about__title">Travel as it should be — personal, unhurried, unforgettable.</h2>
+        <p class="about__para">
+          Aura Voyage was founded on a simple conviction: that true luxury is not about
+          thread counts or star ratings, but about the feeling of being completely known.
+          Every itinerary we craft begins with listening — to the way you like to spend
+          a morning, the foods you seek out, the pace that lets you breathe.
+        </p>
+        <p class="about__para">
+          Our team has travelled to over 120 countries, built relationships with the
+          world's finest estates and most discreet hosts, and refined a standard of
+          care that our guests describe as effortless. We do not sell packages. We
+          design journeys.
+        </p>
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-num">120+</span>
+            <span class="about__stat-label">Countries</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num">800+</span>
+            <span class="about__stat-label">Journeys Crafted</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num">24/7</span>
+            <span class="about__stat-label">Concierge Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__visual">
+        <img src="https://images.pexels.com/photos/17271499/pexels-photo-17271499.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Santorini architecture overlooking the caldera" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="section-head__eyebrow">Guest Voices</p>
+        <h2 class="section-head__title">Stories from our travellers</h2>
+      </div>
+
+      <div class="quote-grid">
+        <blockquote class="quote">
+          <p>"They arranged a private dinner inside a 12th-century cloister in Umbria. We still talk about it as the most magical evening of our lives."</p>
+          <footer class="quote__author">
+            <span class="quote__name">Eleanor & James W.</span>
+            <span class="quote__location">London, UK</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote">
+          <p>"Every detail was anticipated before we asked. The yacht, the chefs, the hidden coves — it felt like the world had been rearranged for us."</p>
+          <footer class="quote__author">
+            <span class="quote__name">Priya M.</span>
+            <span class="quote__location">Mumbai, India</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote">
+          <p>"We have travelled with other agencies before. None came close to this level of care and discretion. Aura Voyage is in a class of its own."</p>
+          <footer class="quote__author">
+            <span class="quote__name">Thomas R.</span>
+            <span class="quote__location">New York, USA</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT / CTA ====== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__card">
+        <p class="section-head__eyebrow">Begin Your Journey</p>
+        <h2 class="contact__title">Tell us where your mind wanders.</h2>
+        <p class="contact__lead">
+          Share a destination, a date, or simply a feeling. Our concierges will respond
+          within 24 hours with the first sketches of your journey.
+        </p>
+        <div class="contact__actions">
+          <a href="#" class="btn btn--primary cta-trigger" data-modal-trigger>Request a Consultation</a>
+          <a href="#" class="btn btn--outline cta-trigger" data-modal-trigger>Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">AV</span>
+        <p>Aura Voyage — bespoke luxury travel, designed around you.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#destinations" class="footer__link">Destinations</a>
+        <a href="#experiences" class="footer__link">Experiences</a>
+        <a href="#concierge" class="footer__link">Concierge</a>
+        <a href="#about" class="footer__link">About</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>Press</a>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>Careers</a>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>Partnerships</a>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>Privacy</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>Instagram</a>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>LinkedIn</a>
+        <a href="#" class="footer__link cta-trigger" data-modal-trigger>concierge@auravoyage.com</a>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <span>© 2026 Aura Voyage. All rights reserved.</span>
+        <span>Crafted with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== MODAL ====== -->
+  <div class="modal" id="infoModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel">
+      <button class="modal__close" id="modalClose" aria-label="Close dialog">&times;</button>
+      <div class="modal__body">
+        <p class="modal__eyebrow">Notice</p>
+        <p class="modal__text">This is a portfolio sample project demonstrating my web development skills. For inquiries or custom web design services, please get in touch directly via email!</p>
+        <button class="btn btn--primary modal__dismiss cta-trigger">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
